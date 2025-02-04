@@ -6,13 +6,9 @@ def is_prime(num):
             return False
     return True
 
-def print_prime(n):
-    primes = []
-    for num in range(2, n + 1):
-        if is_prime(num):
-            primes.append(num)
-    return primes
+def who_am_i(name: str):
+    return f"Hello, I am {name}!"
 
 # Input from the user
-n = int(input("Enter a number: "))
-print("Prime numbers from 1 to", n, "are:", print_prime(n))
+name = input("Enter your name: ")
+print(who_am_i(name))
